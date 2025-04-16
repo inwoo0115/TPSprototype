@@ -11,7 +11,7 @@ public class UEProjectDemo : ModuleRules
         // Build«œ∑¡∏È √ﬂ∞°«ÿ¡‡æﬂ µ 
         PublicIncludePaths.Add("UEProjectDemo");
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput"});
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "CableComponent"});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

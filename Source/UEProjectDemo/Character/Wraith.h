@@ -91,9 +91,6 @@ protected:
 
 	// 에임 타임라인
 
-	UPROPERTY(EditAnywhere, Category = "Timeline")
-	UCurveFloat* AimTimelineFloatCurve;
-
 	FTimeline AimTimeline;
 
 	UFUNCTION()

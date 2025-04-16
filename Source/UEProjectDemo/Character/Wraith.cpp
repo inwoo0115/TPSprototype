@@ -6,6 +6,7 @@
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/TimelineComponent.h"
+#include "CableComponent.h"
 #include "EnhancedInputComponent.h"
 
 // 캐릭터 기본 설정
@@ -71,7 +72,7 @@ void AWraith::BeginPlay()
 	FOnTimelineFloat ProgressUpdate;
 	ProgressUpdate.BindUFunction(this, FName("AimUpdate"));
 
-	AimTimeline.AddInterpFloat(AimTimelineFloatCurve, ProgressUpdate);
+	AimTimeline.AddInterpFloat(nullptr, ProgressUpdate);
 }
 
 void AWraith::Tick(float DeltaTime)
